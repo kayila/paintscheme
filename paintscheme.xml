@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="paintscheme-stylesheet.xsl"?>
+<!DOCTYPE paintscheme [
+<!ELEMENT paintscheme ( models+ )>
+<!ELEMENT models ( model+ )>
+<!ELEMENT model ( primer, shade, component+ )>
+<!ATTLIST model title CDATA #IMPLIED>
+<!ELEMENT primer ( #PCDATA )>
+<!ATTLIST primer
+    href CDATA #IMPLIED
+    practical CDATA #IMPLIED
+    type CDATA #IMPLIED
+    brush CDATA #IMPLIED>
+<!ELEMENT shade ( #PCDATA )>
+<!ATTLIST shade
+    href CDATA #IMPLIED
+    practical CDATA #IMPLIED
+    type CDATA #IMPLIED
+    brush CDATA #IMPLIED>
+<!ELEMENT component ( layer+, base )>
+<!ATTLIST component title CDATA #REQUIRED>
+<!ELEMENT layer ( #PCDATA )>
+<!ATTLIST layer
+    href CDATA #IMPLIED
+    practical CDATA #IMPLIED
+    type CDATA #IMPLIED
+    brush CDATA #IMPLIED>
+<!ELEMENT base ( #PCDATA )>
+<!ATTLIST base
+    href CDATA #IMPLIED
+    practical CDATA #IMPLIED
+    type CDATA #IMPLIED
+    brush CDATA #IMPLIED>
+
+]>
+<paintscheme xmlns="http://kitsuneindustries.com/xml/paintscheme">
+  <models>
+      <model title="all">
+          <primer href="https://www.warhammer.com/en-US/shop/Chaos-Black-Spray-US-2020" type="spray" brush="Spray Can">Citadel Chaos Black</primer>
+          <shade href="https://www.warhammer.com/en-US/shop/shadey-nuln-oil-18ml-2022" type="shade">Citadel Shade Nuln Oil gloss(I didn't find a gloss finish...)</shade>
+          <component title="carapace">
+            <layer href="https://thearmypainter.com/products/warpaints-fanatic-warpaints-fanatic-warlock-magenta-wp3135p" practical="Vivid Purple" type="Warpaints Fanatic">Army Painter Warlock Magenta</layer>
+            <layer href="https://thearmypainter.com/products/warpaints-fanatic-warpaints-fanatic-alien-purple-wp3128p" practical="Deep Violet" type="Warpaints Fanatic">Army Painter Alien Purple</layer>
+            <base href="https://www.warhammer.com/en-US/shop/b-phoenician-purple-12ml-us-can" type="base">Citadel Base Phoenician Purple</base>
+          </component>
+          <component title="eyes &amp; bioweapon glow">
+            <layer href="https://www.warhammer.com/en-US/shop/Technical-Tesseract-Glow-2020" type="technical">Citadel Technical tessaract glow</layer>
+            <base href="https://monumenthobbies.com/products/pro-acryl-bold-titanium-white">Pro Acryl Bold Titanium White</base>
+          </component>
+          <component title="Teeth &amp; Claws">
+            <layer href="https://www.warhammer.com/en-US/shop/l-runefang-steel-12ml-us-can" type="layer">Citadel Layer Runefang Steel</layer>
+            <layer href="https://www.warhammer.com/en-US/shop/l-ironbreaker-12ml-us-can" type="layer">Citadel Layer Ironbreaker</layer>
+            <base href="https://www.warhammer.com/en-US/shop/b-leadbelcher-12ml-us-can" type="base">??? (Citadel Base Leadbelcher)</base>
+          </component>
+    </model>
+  </models>
+</paintscheme>
+
+<!--
+Carapace:
+- army painter warlock magenta
+- army painter alien purple
+- Citadel base Phoenician purple
+
+Eyes/bioweapon glow:
+- citadel technical tessaract glow
+- proacryl gold titanium white
+
+Teeth/claws:
+- citadel layer runefang steel
+- citadel layer ironbreaker
+- ??? (Citadel layer Lead belcher?)
+
+Shade/shadows: citadel shade nuln oil gloss
+-->

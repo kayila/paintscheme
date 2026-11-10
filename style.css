@@ -1,0 +1,30 @@
+div {
+    border: solid black;
+    margin: 1em;
+}
+
+div.component {
+    border: dashed black 2px;
+}
+
+div p.title {
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+dt {
+    font-weight: bold;
+}
+
+table {
+    border: 1px solid black;
+}
+
+th {
+    text-align: right;
+}
+
+td {
+    text-align: left;
+}

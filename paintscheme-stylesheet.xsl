@@ -48,7 +48,7 @@
            <table>
                <tr>
                    <th>Brand</th>
-                   <td></td>
+                   <td><xsl:value-of select="@brand"/></td>
                </tr>
                <tr>
                    <th>Paint Type</th>
@@ -63,8 +63,8 @@
                    <td><xsl:value-of select="@brush"/></td>
                </tr>
                <tr>
-                   <th>Method</th>
-                   <td><xsl:value-of select="@method"/></td>
+                   <th>Technique</th>
+                   <td><xsl:value-of select="@technique"/></td>
                </tr>
            </table>
        </details>
